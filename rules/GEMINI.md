@@ -1,7 +1,5 @@
 # Global Rules
 
-## Settings
-
 - use context7.
 - use sequential-thinking.
 - Always respond in **한국어(Korean)**.
