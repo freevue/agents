@@ -1,3 +1,7 @@
+---
+description: React와 관련된 Rule만 가져옵니다.
+---
+
 # Get React Rule
 
 React와 관련된 Rule만 가지고와 리스트업합니다.
