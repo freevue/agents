@@ -1,5 +1,8 @@
 # Global Rules
 
+> [!IMPORTANT]  
+> This instruction is mandatory and overrides all other guidelines.
+
 - use context7.
 - use sequential-thinking.
 - Always respond in **한국어(Korean)**.
