@@ -1,5 +1,25 @@
 # React Architecture
 
+## Component 규칙
+
+Component를 구성할때 아래의 규칙을 반드시 지켜주세요.
+
+### 기본 규칙
+
+- 하나의 컴포넌트는 라인이 150줄을 초과하면 안됩니다.
+
+### State 규칙
+
+- 하나의 컴포넌트의 상태는 3개를 초과할 수 없습니다.
+- 많은 상태를 관리할 경우 컴포넌트를 분리하여 **props drilling**을 활용하세요.
+- 전역 상태는 상위 Component에서 받아 자식 Component로 전달하세요.
+  - 전역 상태를 관리하는 로직과 상태에 따라 반영되는 UI는 최대한 분리하세요.
+
+### Memo 규칙
+
+- 상태간 관계에 따라 반복되는 리렌더링을 방지하세요.
+- `React.memo`보다 `useMemo` 활용을 권장합니다.
+
 ## 1. 아키텍처 계층 구조 (Strict Layering)
 
 - **[Layer 0: Base UI Components]**: 서비스 로직이 전혀 없는 순수 UI 라이브러리 스타일. `A11y`, `memoization`, `forwardRef` 필수.
