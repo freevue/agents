@@ -71,8 +71,7 @@ Component를 구성할때 하위 예시를 참고하세요.
 components/
 └── List/
     ├── index.tsx
-    ├── Item.tsx
-    └── AGENTS.md
+    └── Item.tsx
 ```
 
 ```tsx
@@ -119,10 +118,8 @@ export default List;
 ```plaintext
 components/
 ├── Play.tsx       # 단일 파일로 구성할 수 있습니다.
-├── AGENTS.md
 └── Board/         # 폴더를 활용하여 구성할 수 있습니다.
-    ├── index.tsx
-    └── AGENTS.md
+    └── index.tsx
 ```
 
 ```tsx
