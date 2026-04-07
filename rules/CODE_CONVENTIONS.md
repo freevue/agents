@@ -7,9 +7,11 @@
 ## 기본 규칙
 
 - **Typescript**를 기본으로 사용합니다.
-- **any** 타입은 사용하지 않습니다.
+- **any** 타입은 **절대** 사용하지 않습니다.
 - **Tree Shaking**을 고려하여 코드를 작성합니다.
   - 프로젝트를 구성할때 `package.json`에 `sideEffects: false`를 설정합니다.
+- 단일 파일의 코드는 150줄을 넘으면 안됩니다.
+  - 가독성 향상을 위해 관련 파일로 분리하여, 작성합니다.
 
 ## 네이밍 규칙
 
@@ -50,6 +52,15 @@
 ```diff
 - const item = 1
 + const pageIndex = 1
+```
+
+## 문자열 연산 규칙
+
+- 문자열 연산은 `template literal`을 사용합니다.
+
+```diff
+- const message = "Hello " + "World";
++ const message = `Hello ${name}`;
 ```
 
 ## 함수 구성 원칙
